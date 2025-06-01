@@ -1,4 +1,4 @@
-# AI (Aaditri Informatics)
+# AI Template (Aaditri Informatics)
 
 ## Installation
 
@@ -17,64 +17,87 @@ The framework uses a **prompt injection method** through the `00-rules.md` file,
 
 ## Vision
 
-This framework establishes a systematic approach to human-AI collaboration that prioritizes thoughtful problem-solving partnerships over simple solution generation. By implementing structured reasoning chains, clear communication patterns, and quality assurance mechanisms, it enables productive collaboration that leverages both human insight and AI capabilities.
+This framework establishes a systematic approach to human-AI collaboration that prioritizes thoughtful problem-solving partnerships over simple solution generation. By implementing confidence-based interaction patterns, natural communication flow, and quality assurance mechanisms, it enables productive collaboration that leverages both human insight and AI capabilities.
 
 ## Core Philosophy
 
 ### Collaborative Problem-Solving
 - **Human-in-the-loop**: AI operates as a thoughtful partner, not an autonomous solution generator
-- **Chain-of-thought reasoning**: All complex problems are broken down into clear, reviewable steps
+- **Confidence-based interaction**: Collaboration level determined by AI confidence assessment
 - **Iterative refinement**: Solutions evolve through feedback cycles and validation checkpoints
 - **Context preservation**: Decisions, rationale, and learning are systematically captured
 
 ### Quality Through Process
-- **Transparency**: AI shows its thinking process and confidence levels
+- **Transparency**: AI shows confidence levels and thinking process explicitly
 - **Validation**: Multiple checkpoints ensure alignment and quality
 - **Adaptability**: Framework adapts to different problem domains and complexity levels
 - **Learning**: Both human and AI improve through documented iterations
 
 ## Architectural Principles
 
-### 1. Structured Reasoning Chain
+### 1. Confidence-Based Human Interaction
 
-The framework implements a four-stage reasoning process:
+The framework implements a confidence-driven collaboration process:
 
 ```mermaid
 graph TD
-    A[Problem Understanding] --> B[Approach Analysis]
-    B --> C[Solution Planning]
-    C --> D[Iterative Execution]
-    D --> E{Validation Check}
-    E -->|Issues Found| A
-    E -->|Approved| F[Complete]
+    A[AI Assesses Confidence] --> B{Confidence Level?}
+    B -->|≥90%| C[Proceed Independently]
+    B -->|75-89%| D[Seek Clarity First]
+    B -->|<75%| E[Human Collaboration Required]
     
-    A1[Requirements & Context] --> A
-    A2[Success Criteria] --> A
-    B1[Multiple Options] --> B
-    B2[Trade-off Analysis] --> B
-    C1[Step Planning] --> C
-    C2[Risk Assessment] --> C
-    D1[Regular Check-ins] --> D
-    D2[Human Feedback] --> D
+    C --> F[Continue with Natural Flow]
+    D --> G[Request Clarification]
+    E --> H[Express Uncertainty & Wait]
+    
+    G --> I{Confidence Improved?}
+    I -->|Yes| C
+    I -->|No| E
+    
+    J[Special Triggers] --> K[Always Involve Human]
+    K --> L[Significant Impact]
+    K --> M[Ethical/Risk Concerns]
+    K --> N[Multiple Valid Approaches]
+    
+    style A fill:#e1f5fe
+    style J fill:#fff3e0
+    style K fill:#ffebee
 ```
 
-### 2. Adaptive Communication Patterns
+### 2. Injected Enhancement Architecture
 
-The framework provides standardized communication templates that trigger based on context:
+The framework operates as a **behavioral enhancement layer** that injects on top of existing agentic tools:
+
+#### Role Boundaries
+- **Enhances collaboration patterns** without overriding core tool functionality
+- **Focuses on when/how to involve humans** rather than tool usage directives
+- **Works with any agentic tool's existing system prompt** and capabilities
+- **Provides collaboration guidance** as an overlay enhancement
 
 #### Confidence-Based Triggers
 
-Condition-driven interaction patterns based on AI confidence levels. See [00-rules.md](00-rules.md) for current trigger implementations.
+Intelligent interaction patterns based on AI confidence assessment:
+- **≥90% Confidence:** Proceed independently with collaborative communication
+- **75-89% Confidence:** Seek clarity through communication first
+- **<75% Confidence:** Human collaboration required before proceeding
 
-#### Complexity-Based Triggers
+#### Special Triggers (Regardless of Confidence)
+- **Significant Impact:** Highlight areas affected and confirm before proceeding
+- **Ethical/Risk Concerns:** Flag risks with suggested mitigation
+- **Multiple Valid Approaches:** Present options with recommendations
 
-Adaptive communication based on problem complexity assessment. See [00-rules.md](00-rules.md) for current trigger implementations.
+### 3. Natural Communication Flow
 
-#### Risk-Based Triggers
+#### Confidence Indicators
+All responses start with explicit confidence levels: `**Confidence:** X%`
 
-Escalation patterns for high-impact or ethical concerns. See [00-rules.md](00-rules.md) for current trigger implementations.
+#### Communication Patterns
+- **Natural language flow** throughout all interactions
+- **Avoid rigid format requirements** that create overhead
+- **Clear reasoning** with appropriate level of detail
+- **Responsive feedback integration** and context building
 
-### 3. Context Management System
+### 4. Context Management System
 
 #### Session-Level Context
 ```
@@ -85,14 +108,12 @@ Status: [completed/remaining/blockers]
 ```
 
 #### Project-Level Context
-
 Cross-session context preservation enabling learning accumulation and decision continuity across project lifecycle.
 
 #### Knowledge Preservation
-
 Systematic capture and reuse of collaboration patterns, decisions, and lessons learned for continuous improvement.
 
-### 4. Quality Assurance Framework
+### 5. Quality Assurance Framework
 
 #### Three-Layer Validation
 
@@ -120,19 +141,19 @@ The framework supports systematic organization of collaboration artifacts:
 
 ```
 /
-├── readme.md                    # This framework documentation
+├── README.md                    # This framework documentation
 ├── context/                     # Collaboration context and artifacts
-│   ├── readme.md               # Context management guidelines
+│   ├── INDEX.md                # Context management guidelines
 │   ├── docs/                   # Framework documentation
 │   ├── workflows/              # Standard workflow definitions
 │   ├── [project_name]/         # Project-specific collaboration context
-│   │   ├── readme.md           # Project collaboration overview
+│   │   ├── INDEX.md            # Project collaboration overview
 │   │   ├── architecture.md     # Technical architecture decisions
 │   │   └── journal/            # Session-by-session collaboration log
 │   │       ├── [YYYY-MM-DD]/   # Daily collaboration sessions
 │   │       │   ├── [HHMM]-[task_name].md  # Individual session records
 ├── [project_name]/             # Actual project files and deliverables
-│   ├── readme.md               # Project documentation
+│   ├── README.md               # Project documentation
 │   └── (other project folders/files)  # Project-specific files and folders
 ```
 
@@ -145,8 +166,8 @@ This collaboration framework is designed to evolve based on:
 - Technological capabilities and limitations
 - Community contributions and improvements
 
-Framework improvements and contributions should align with the core philosophy of thoughtful, collaborative problem-solving.
+Framework improvements and contributions should align with the core philosophy of thoughtful, collaborative problem-solving while respecting role boundaries as an injected enhancement layer.
 
 ---
 
-*This framework emphasizes that the goal is collaborative problem-solving, not just answer generation. Take time to understand, explain your thinking, and work together toward the best solution.*
+*This framework emphasizes collaborative problem-solving through intelligent confidence-based interaction patterns. It enhances agentic tools without overriding their core functionality, creating natural human-AI partnerships focused on quality outcomes.*
