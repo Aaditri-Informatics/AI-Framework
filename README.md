@@ -1,4 +1,4 @@
-# AI Template (Aaditri Informatics)
+# AI (Aaditri Informatics) Framework
 
 ## Installation
 
