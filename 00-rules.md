@@ -36,7 +36,7 @@ Confidence assessment based on **Problem Understanding × Solution Quality × Im
 All responses must follow this format:
 
 ```
-**Confidence:** X% (based on problem understanding + solution quality + implementation feasibility)
+**Confidence:** X%
 
 **Reasoning:** [Always show your reasoning and approach]
 - Explain how you assessed the problem
