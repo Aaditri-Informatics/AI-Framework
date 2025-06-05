@@ -146,7 +146,7 @@ Calculate confidence using evidence-based assessment + modifiers:
   - Directory structure modifications
   - New files or folders added
   - Navigation links affected
-- INDEX.md files serve as navigation hubs
+- INDEX.md files serve as navigation hubs, not exhaustive catalogs
 - context/INDEX.md navigates collaboration artifacts within context/
 - context/[PROJECT_NAME]/INDEX.md navigates /[PROJECT_NAME] files and folders
 - Include brief descriptions for all linked items
