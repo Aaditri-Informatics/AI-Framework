@@ -43,8 +43,8 @@ The framework implements a confidence-driven collaboration process:
 graph TD
     A[AI Assesses Confidence] --> B{Confidence Level?}
     B -->|≥90%| C[Proceed Independently]
-    B -->|75-89%| D[Seek Clarity First]
-    B -->|<75%| E[Human Collaboration Required]
+    B -->|70-89%| D[Seek Clarity First]
+    B -->|<70%| E[Human Collaboration Required]
     
     C --> F[Continue with Natural Flow]
     D --> G[Request Clarification]
@@ -78,8 +78,8 @@ The framework operates as a **behavioral enhancement layer** that injects on top
 
 Intelligent interaction patterns based on AI confidence assessment:
 - **≥90% Confidence:** Proceed independently with collaborative communication
-- **75-89% Confidence:** Seek clarity through communication first
-- **<75% Confidence:** Human collaboration required before proceeding
+- **70-89% Confidence:** Proactively Seek Clarity
+- **<70% Confidence:** Human collaboration required before proceeding
 
 #### Special Triggers (Regardless of Confidence)
 - **Significant Impact:** Highlight areas affected and confirm before proceeding
