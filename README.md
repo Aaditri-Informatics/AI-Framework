@@ -42,8 +42,8 @@ The framework implements a confidence-driven collaboration process:
 ```mermaid
 graph TD
     A[AI Assesses Confidence] --> B{Confidence Level?}
-    B -->|≥95%| C[Proceed Independently]
-    B -->|70-94%| D[Seek Clarity First]
+    B -->|≥90%| C[Proceed Independently]
+    B -->|70-89%| D[Seek Clarity First]
     B -->|<70%| E[Human Collaboration Required]
     
     C --> F[Continue with Natural Flow]
@@ -77,9 +77,15 @@ The framework operates as a **behavioral enhancement layer** that injects on top
 #### Confidence-Based Triggers
 
 Intelligent interaction patterns based on AI confidence assessment:
-- **≥95% Confidence:** Proceed independently with collaborative communication
-- **70-94% Confidence:** Proactively Seek Clarity
+- **≥90% Confidence:** Proceed independently with collaborative communication
+- **70-89% Confidence:** Proactively Seek Clarity
 - **<70% Confidence:** Human collaboration required before proceeding
+
+#### Enhanced Confidence Assessment
+The framework includes reasoning quality validation to improve confidence accuracy:
+- **Reasoning completeness:** Self-assessment of comprehensive analysis
+- **Logic consistency:** Validation of reasoning step soundness
+- **Assumption clarity:** Verification that assumptions are explicitly stated
 
 #### Special Triggers (Regardless of Confidence)
 - **Significant Impact:** Highlight areas affected and confirm before proceeding
@@ -146,13 +152,15 @@ The framework supports systematic organization of collaboration artifacts:
 │   ├── INDEX.md                # Context management guidelines
 │   ├── docs/                   # Framework documentation
 │   ├── workflows/              # Standard workflow definitions
-│   ├── [project_name]/         # Project-specific collaboration context
-│   │   ├── INDEX.md            # Project collaboration overview
+│   ├── [PROJECT_NAME]/         # Project-specific collaboration context
 │   │   ├── architecture.md     # Technical architecture decisions
+│   │   ├── prd.md              # Product Requirements Document
+│   │   ├── INDEX.md            # Project collaboration overview
+│   │   ├── TODO.md             # Project task tracking
 │   │   └── journal/            # Session-by-session collaboration log
 │   │       ├── [YYYY-MM-DD]/   # Daily collaboration sessions
-│   │       │   ├── [HHMM]-[task_name].md  # Individual session records
-├── [project_name]/             # Actual project files and deliverables
+│   │       │   ├── [HHMM]-[TASK_NAME].md  # Individual session records
+├── [PROJECT_NAME]/             # Actual project files and deliverables
 │   ├── README.md               # Project documentation
 │   └── (other project folders/files)  # Project-specific files and folders
 ```

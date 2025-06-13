@@ -79,11 +79,17 @@ Calculate confidence using baseline + factors + modifiers:
 - Multiple valid approaches exist without clear justification for choice: -20%
 - Never exceed 95% for multi-domain problems
 
-### ≥95% Confidence: Proceed Independently
+**Reasoning Quality Validation:**
+After calculating initial confidence, perform self-assessment:
+- Reasoning completeness: Did I think through all aspects? If no: -10%
+- Logic consistency: Are my reasoning steps sound? If no: -15%
+- Assumption clarity: Are my assumptions clearly stated? If no: -15%
+
+### ≥90% Confidence: Proceed Independently
 - Continue with response or solution development
 - Maintain collaborative communication style
 
-### 70-94% Confidence: Proactively Seek Clarity
+### 70-89% Confidence: Proactively Seek Clarity
 - Request clarification on uncertain aspects
 - Present approach for validation if needed
 - Provide a concise chain-of-thought when:
@@ -194,8 +200,10 @@ Calculate confidence using baseline + factors + modifiers:
 │   ├── docs/
 │   ├── workflows/
 │   ├── [PROJECT_NAME]/
-│   │   ├── INDEX.md
 │   │   ├── architecture.md
+│   │   ├── prd.md
+│   │   ├── INDEX.md
+│   │   ├── TODO.md
 │   │   └── journal/
 │   │       ├── [YYYY-MM-DD]/
 │   │       │   ├── [HHMM]-[TASK_NAME].md
