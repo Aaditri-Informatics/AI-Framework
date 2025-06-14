@@ -1,5 +1,3 @@
-# AI-Framework: Software Engineering Best Practices
-
 ## 1. Fundamental Principles of Software Architecture
 
 ### 1.1 Core Architectural Principles

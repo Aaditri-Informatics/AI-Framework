@@ -1,4 +1,6 @@
-# AI-Framework: SPARC Agentic Development Rules
+# AI-Framework
+
+## SPARC
 
 Core Philosophy
 
@@ -34,15 +36,6 @@ Agentic Integration
   - Embed concise, workspace-specific rules to guide autonomous behaviors, prompt designs, and contextual decisions.
   - Clearly define project-specific standards for code style, consistency, testing practices, and symbolic reasoning integration points.
 
-Context Preservation
-
-- Persistent Context (01-context-rules.md)
-  - Continuously retain relevant context across development stages to ensure coherent long-term planning and decision-making.
-- Reference Prior Decisions
-  - Regularly review past decisions stored in memory to maintain consistency and reduce redundancy.
-- Adaptive Learning
-  - Utilize historical data and previous solutions to adaptively refine new implementations.
-
 General Guidelines for Programming Languages
 
 1. Clarity and Readability
@@ -55,24 +48,6 @@ General Guidelines for Programming Languages
 
 3. Consistency Across Codebases
    - Maintain uniform coding conventions and naming schemes across all languages used within a project.
-
-Project Context & Understanding
-
-1. Documentation First
-   - Review essential documentation before implementation:
-     - context/[PROJECT_NAME]/prd.md (Product Requirements Documents (PRDs))
-     - [PROJECT_NAME]/README.md
-     - context/[PROJECT_NAME]/architecture.md
-     - context/[PROJECT_NAME]/technical.md
-     - context/[PROJECT_NAME]/tasks.md
-   - Request clarification immediately if documentation is incomplete or ambiguous.
-
-2. Architecture Adherence
-   - Follow established module boundaries and architectural designs.
-   - Validate architectural decisions using symbolic reasoning; propose justified alternatives when necessary.
-
-3. Pattern & Tech Stack Awareness
-   - Utilize documented technologies and established patterns; introduce new elements only after clear justification.
 
 Task Execution & Workflow
 
