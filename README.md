@@ -1,5 +1,7 @@
 # AI (Aaditri Informatics) Framework
 
+There's an Experimental branch if you want to test and give feedback.
+
 ## Installation
 
 The framework uses a **prompt injection method** through the `00-rules.md` file, which contains collaboration rules that modify AI behavior:
