@@ -14,15 +14,15 @@ The framework uses a **prompt injection method** through multiple rule files tha
 3. For Cursor: .cursor/rules/
    - Copy all framework files to this directory
 4. For Claude:
-   - Combine all files or use 00-core-rules.md as primary claude.md
+   - Combine all files or use 02-core-rules.md as primary claude.md
 ```
 
 ## Framework Architecture
 
 ### Modular Structure
-- **[`00-core-rules.md`](00-core-rules.md)**: Comprehensive software engineering best practices
+- **[`00-agent-rules.md`](00-agent-rules.md)**: SPARC agentic development methodology
 - **[`01-context-rules.md`](01-context-rules.md)**: Context management and preservation systems
-- **[`02-agent-rules.md`](02-agent-rules.md)**: SPARC agentic development methodology
+- **[`02-core-rules.md`](02-core-rules.md)**: Comprehensive software engineering best practices
 - **[`03-workspace-rules.md`](03-workspace-rules.md)**: Workspace-specific customization rules
 
 # Human-AI Collaboration & Software Engineering Framework
