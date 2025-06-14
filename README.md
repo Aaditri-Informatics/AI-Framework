@@ -2,108 +2,120 @@
 
 ## Installation
 
-The framework uses a **prompt injection method** through the `00-rules.md` file, which contains collaboration rules that modify AI behavior:
+The framework uses a **prompt injection method** through multiple rule files that provide comprehensive engineering guidance:
 
 ```bash
-# Place 00-rules.md in your AI assistant's rules directory:
+# Place all framework files in your AI assistant's rules directory:
 
 1. For Roo Code: .roo/rules/
+   - Copy: 00-core-rules.md, 01-context-rules.md, 02-agent-rules.md, 03-workspace-rules.md
 2. For Cline: .clinerules/
+   - Copy all framework files to this directory
 3. For Cursor: .cursor/rules/
-4. For Claude: rename 00-rules.md to claude.md
+   - Copy all framework files to this directory
+4. For Claude:
+   - Combine all files or use 00-core-rules.md as primary claude.md
 ```
 
-# Human-AI Collaboration Framework
+## Framework Architecture
+
+### Modular Structure
+- **[`00-core-rules.md`](00-core-rules.md)**: Comprehensive software engineering best practices
+- **[`01-context-rules.md`](01-context-rules.md)**: Context management and preservation systems
+- **[`02-agent-rules.md`](02-agent-rules.md)**: SPARC agentic development methodology
+- **[`03-workspace-rules.md`](03-workspace-rules.md)**: Workspace-specific customization rules
+
+# Human-AI Collaboration & Software Engineering Framework
 
 ## Vision
 
-This framework establishes a systematic approach to human-AI collaboration that prioritizes thoughtful problem-solving partnerships over simple solution generation. By implementing confidence-based interaction patterns, natural communication flow, and quality assurance mechanisms, it enables productive collaboration that leverages both human insight and AI capabilities.
+This framework establishes a comprehensive approach to software engineering excellence through intelligent human-AI collaboration. By integrating proven engineering methodologies with adaptive AI capabilities, it enables systematic problem-solving, maintains code quality, and accelerates development while preserving technical rigor and professional standards.
 
 ## Core Philosophy
 
-### Collaborative Problem-Solving
-- **Human-in-the-loop**: AI operates as a thoughtful partner, not an autonomous solution generator
-- **Confidence-based interaction**: Collaboration level determined by AI confidence assessment
-- **Iterative refinement**: Solutions evolve through feedback cycles and validation checkpoints
-- **Context preservation**: Decisions, rationale, and learning are systematically captured
+### SPARC Methodology Integration
+- **Simplicity**: Prioritize clear, maintainable solutions over unnecessary complexity
+- **Iteration**: Enhance existing systems through continuous improvement cycles
+- **Focus**: Maintain strict adherence to defined objectives and scope
+- **Quality**: Deliver clean, tested, documented, and secure outcomes
+- **Collaboration**: Foster effective partnerships between human engineers and AI agents
 
-### Quality Through Process
-- **Transparency**: AI shows confidence levels and thinking process explicitly
-- **Validation**: Multiple checkpoints ensure alignment and quality
-- **Adaptability**: Framework adapts to different problem domains and complexity levels
-- **Learning**: Both human and AI improve through documented iterations
+### Engineering Excellence
+- **Systematic Approach**: Apply methodical problem-solving and debugging practices
+- **Architectural Thinking**: Design scalable, maintainable systems with proper separation of concerns
+- **Quality Assurance**: Implement comprehensive testing, validation, and quality gates
+- **Context Preservation**: Maintain decision history and knowledge across development lifecycle
+- **Continuous Learning**: Adapt and improve through experience and feedback
 
 ## Architectural Principles
 
-### 1. Confidence-Based Human Interaction
+### 1. Comprehensive Software Engineering Best Practices
 
-The framework implements a confidence-driven collaboration process:
+The framework implements systematic approaches to software development excellence:
 
-```mermaid
-graph TD
-    A[AI Assesses Confidence] --> B{Confidence Level?}
-    B -->|≥90%| C[Proceed Independently]
-    B -->|70-89%| D[Seek Clarity First]
-    B -->|<70%| E[Human Collaboration Required]
-    
-    C --> F[Continue with Natural Flow]
-    D --> G[Request Clarification]
-    E --> H[Express Uncertainty & Wait]
-    
-    G --> I{Confidence Improved?}
-    I -->|Yes| C
-    I -->|No| E
-    
-    J[Special Triggers] --> K[Always Involve Human]
-    K --> L[Significant Impact]
-    K --> M[Ethical/Risk Concerns]
-    K --> N[Multiple Valid Approaches]
-    
-    style A fill:#e1f5fe
-    style J fill:#fff3e0
-    style K fill:#ffebee
-```
+#### Core Engineering Principles
+- **Separation of Concerns**: Divide systems into distinct, focused components
+- **Single Responsibility**: Each component has one clear reason to change
+- **DRY (Don't Repeat Yourself)**: Eliminate duplication through abstraction
+- **KISS (Keep It Simple)**: Favor straightforward solutions over complex ones
+- **Dependency Inversion**: High-level modules depend on abstractions, not implementations
 
-### 2. Injected Enhancement Architecture
+#### Quality Attributes Focus
+- **Performance**: Optimize for efficiency and scalability
+- **Reliability**: Build fault-tolerant systems with graceful degradation
+- **Security**: Implement security by design with proper authentication and validation
+- **Maintainability**: Create easily modifiable and extensible systems
+- **Testability**: Design for comprehensive automated testing
 
-The framework operates as a **behavioral enhancement layer** that injects on top of existing agentic tools:
+### 2. SPARC Development Methodology
 
-#### Role Boundaries
-- **Enhances collaboration patterns** without overriding core tool functionality
-- **Focuses on when/how to involve humans** rather than tool usage directives
-- **Works with any agentic tool's existing system prompt** and capabilities
-- **Provides collaboration guidance** as an overlay enhancement
+Structured workflow phases ensure systematic development:
 
-#### Confidence-Based Triggers
+#### Task Definition & Execution
+1. **Specification**: Define clear objectives, requirements, and success criteria
+2. **Pseudocode**: Map logical implementation pathways before coding
+3. **Architecture**: Design modular, maintainable system components
+4. **Refinement**: Iteratively optimize through feedback loops
+5. **Completion**: Conduct testing, documentation, and deployment
 
-Intelligent interaction patterns based on AI confidence assessment:
-- **≥90% Confidence:** Proceed independently with collaborative communication
-- **70-89% Confidence:** Proactively Seek Clarity
-- **<70% Confidence:** Human collaboration required before proceeding
+#### Agentic Integration
+- **Clear Instructions**: Explicit directives with defined outcomes and constraints
+- **Context Referencing**: Leverage previous decisions and learning
+- **Incremental Progress**: Break complex tasks into reviewable sub-steps
+- **Quality Gates**: Enforce standards through automated checks and validation
 
-#### Enhanced Confidence Assessment
-The framework includes reasoning quality validation to improve confidence accuracy:
-- **Reasoning completeness:** Self-assessment of comprehensive analysis
-- **Logic consistency:** Validation of reasoning step soundness
-- **Assumption clarity:** Verification that assumptions are explicitly stated
+### 3. Enhanced Human-AI Collaboration
 
-#### Special Triggers (Regardless of Confidence)
-- **Significant Impact:** Highlight areas affected and confirm before proceeding
-- **Ethical/Risk Concerns:** Flag risks with suggested mitigation
-- **Multiple Valid Approaches:** Present options with recommendations
+#### Intelligent Interaction Patterns
+- **Confidence-Based Responses**: Collaboration level determined by AI assessment
+- **Natural Communication**: Avoid rigid formats while maintaining clarity
+- **Methodical Problem-Solving**: Systematic debugging and solution approaches
+- **Continuous Learning**: Adapt based on experience and feedback
 
-### 3. Natural Communication Flow
+#### Collaborative Decision Making
+- **Options Analysis**: Evaluate multiple solutions with clear criteria
+- **Risk Assessment**: Identify and mitigate potential issues
+- **Architecture Decision Records**: Document significant choices and rationale
+- **Consensus Building**: Involve stakeholders in important decisions
 
-#### Confidence Indicators
-Confidence levels integrated naturally into response flow, avoiding mechanical formatting
+### 4. Advanced Problem-Solving & Debugging
 
-#### Communication Patterns
-- **Natural language flow** throughout all interactions
-- **Avoid rigid format requirements** that create overhead
-- **Clear reasoning** with appropriate level of detail
-- **Responsive feedback integration** and context building
+#### Methodical Debugging Process
+1. **Reproduce Issues**: Create reliable, minimal test cases
+2. **Gather Information**: Collect logs, traces, and system state data
+3. **Analyze Patterns**: Review data to understand behavior and anomalies
+4. **Form Hypotheses**: Develop theories prioritized by likelihood and impact
+5. **Test Systematically**: Execute tests to confirm or eliminate hypotheses
+6. **Implement & Verify**: Apply fixes and validate across multiple scenarios
+7. **Document Findings**: Record issues, causes, and solutions for future reference
 
-### 4. Context Management System
+#### Advanced Techniques
+- **Binary Search Debugging**: Systematically eliminate problem space
+- **Root Cause Analysis**: Look beyond symptoms to fundamental issues
+- **State Snapshot Analysis**: Capture system state for intermittent issues
+- **Differential Debugging**: Compare working vs. non-working states
+
+### 5. Context Management & Knowledge Preservation
 
 #### Session-Level Context
 ```
@@ -114,40 +126,52 @@ Status: [completed/remaining/blockers]
 ```
 
 #### Project-Level Context
-Cross-session context preservation enabling learning accumulation and decision continuity across project lifecycle.
+- **Persistent Context**: Retain relevant information across development stages
+- **Decision History**: Track architectural choices and their rationale
+- **Learning Integration**: Utilize historical data to refine implementations
+- **Cross-Project Knowledge**: Apply patterns and lessons across initiatives
 
-#### Knowledge Preservation
-Systematic capture and reuse of collaboration patterns, decisions, and lessons learned for continuous improvement.
+#### Documentation Standards
+- **Architecture Decision Records (ADRs)**: Document significant technical decisions
+- **Context Management**: Maintain INDEX.md files for navigation
+- **Knowledge Base**: Capture institutional wisdom and best practices
+- **Session Journals**: Record detailed collaboration logs
 
-### 5. Quality Assurance Framework
+### 6. Quality Assurance & Validation Framework
+
+#### Comprehensive Testing Strategy
+- **Test-Driven Development**: Write tests before implementing features
+- **Test Pyramid**: Unit, integration, and end-to-end test coverage
+- **Continuous Integration**: Automated build and test on every commit
+- **Quality Gates**: Enforce standards through automated checks
 
 #### Three-Layer Validation
 
 **Layer 1: Pre-Development**
-- [ ] Requirements clearly understood
-- [ ] Approach validated with human
-- [ ] Potential issues identified
-- [ ] Success criteria defined
+- [ ] Requirements clearly understood and documented
+- [ ] Architecture approach validated and approved
+- [ ] Potential risks and issues identified
+- [ ] Success criteria and acceptance tests defined
 
 **Layer 2: During Development**
-- [ ] Regular check-ins with human
-- [ ] Quality standards maintained
-- [ ] Edge cases considered
-- [ ] Limitations acknowledged
+- [ ] Code quality standards maintained
+- [ ] Comprehensive test coverage implemented
+- [ ] Security and performance considerations addressed
+- [ ] Regular validation checkpoints completed
 
 **Layer 3: Post-Development**
-- [ ] Human approval received
-- [ ] Solution reviewed for completeness
-- [ ] Validation approach defined
-- [ ] Documentation updated
+- [ ] All tests passing and quality gates met
+- [ ] Security review and vulnerability assessment completed
+- [ ] Performance benchmarks validated
+- [ ] Documentation updated and knowledge preserved
 
 ## Directory Structure
 
-The framework supports systematic organization of collaboration artifacts:
+The framework supports systematic organization of development and collaboration artifacts:
 
 ```
 /
-├── README.md                    # This framework documentation
+├── README.md                    # Workspace overview documentation
 ├── context/                     # Collaboration context and artifacts
 │   ├── INDEX.md                # Context management guidelines
 │   ├── docs/                   # Framework documentation
@@ -155,27 +179,38 @@ The framework supports systematic organization of collaboration artifacts:
 │   ├── [PROJECT_NAME]/         # Project-specific collaboration context
 │   │   ├── architecture.md     # Technical architecture decisions
 │   │   ├── prd.md              # Product Requirements Document
+│   │   ├── technical.md        # Technical specifications
 │   │   ├── INDEX.md            # Project collaboration overview
-│   │   ├── TODO.md             # Project task tracking
+│   │   ├── tasks.md            # Project task tracking
 │   │   └── journal/            # Session-by-session collaboration log
 │   │       ├── [YYYY-MM-DD]/   # Daily collaboration sessions
 │   │       │   ├── [HHMM]-[TASK_NAME].md  # Individual session records
 ├── [PROJECT_NAME]/             # Actual project files and deliverables
-│   ├── README.md               # Project documentation
-│   └── (other project folders/files)  # Project-specific files and folders
+│   ├── README.md               # Project-specific documentation
+│   └── (other project folders/files)  # Project-specific implementation files and folders
 ```
 
-## Framework Evolution
+## Framework Evolution & Customization
 
-This collaboration framework is designed to evolve based on:
-- Practical experience and usage patterns
-- Effectiveness metrics and user feedback
-- Domain-specific requirements and adaptations
-- Technological capabilities and limitations
-- Community contributions and improvements
+### Continuous Improvement
+This comprehensive software engineering framework evolves through:
+- **Practical Experience**: Real-world usage patterns and lessons learned across projects
+- **Engineering Excellence**: Integration of proven software development methodologies
+- **Community Contributions**: Collaborative improvements and domain-specific adaptations
+- **Technology Advancement**: Adaptation to new tools, languages, and development practices
 
-Framework improvements and contributions should align with the core philosophy of thoughtful, collaborative problem-solving while respecting role boundaries as an injected enhancement layer.
+### Customization Guidelines
+- **Workspace-Specific Rules**: Use `03-workspace-rules.md` for customizing framework behavior across the workspace
+- **Domain Adaptations**: Tailor approaches for different technical domains and requirements
+- **Tool Integration**: Adapt installation and usage for various agentic development tools
+- **Quality Standards**: Adjust validation criteria and quality gates for workspace needs
+
+### Enterprise Integration
+- **Scalable Architecture**: Supports development from prototype to enterprise-scale systems
+- **Security & Reliability**: Built-in practices for secure, reliable software development
+- **Knowledge Preservation**: Comprehensive documentation and decision tracking systems
+- **Quality Assurance**: Multi-layer validation, testing, and continuous improvement processes
 
 ---
 
-*This framework emphasizes collaborative problem-solving through intelligent confidence-based interaction patterns. It enhances agentic tools without overriding their core functionality, creating natural human-AI partnerships focused on quality outcomes.*
+*This framework integrates comprehensive software engineering excellence with intelligent human-AI collaboration, providing systematic approaches to development, architecture, debugging, and quality assurance across the complete software development lifecycle.*
