@@ -8,8 +8,8 @@ The framework uses a **prompt injection method** through multiple rule files tha
 # Place all framework files in your AI assistant's rules directory:
 
 1. For Roo Code: .roo/rules/
-   - Copy: 00-core-rules.md, 01-context-rules.md, 02-agent-rules.md, 03-workspace-rules.md
-2. For Cline: .clinerules/
+   - Copy all framework files to this directory
+2. For Cline: .cline/rules/
    - Copy all framework files to this directory
 3. For Cursor: .cursor/rules/
    - Copy all framework files to this directory
