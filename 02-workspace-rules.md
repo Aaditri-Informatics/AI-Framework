@@ -87,7 +87,7 @@
    - Write modular, scalable code optimized for clarity and maintenance.
 
 3. Concise Components
-   - Keep files concise (under 300 lines) and proactively refactor.
+   - Keep files concise (under 500 lines) and proactively refactor.
 
 4. Avoid Duplication (DRY)
    - Use symbolic reasoning to systematically identify redundancy.

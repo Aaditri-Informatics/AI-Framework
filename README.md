@@ -2,7 +2,7 @@
 
 ## Installation
 
-The framework uses a **prompt injection method** through multiple rule files that provide comprehensive engineering guidance:
+The framework uses a **prompt injection method** through multiple rule files that provide comprehensive engineering guidance. **All files combined in sequence create a single comprehensive system prompt** that transforms AI assistants into sophisticated engineering partners.
 
 ```bash
 # Place all framework files in your AI assistant's rules directory:
@@ -14,16 +14,15 @@ The framework uses a **prompt injection method** through multiple rule files tha
 3. For Cursor: .cursor/rules/
    - Copy all framework files to this directory
 4. For Claude:
-   - Combine all files or use 02-core-rules.md as primary claude.md
+   - Combine all files or use 01-best-practices.md as primary claude.md
 ```
 
 ## Framework Architecture
 
 ### Modular Structure
-- **[`00-agent-rules.md`](00-agent-rules.md)**: SPARC agentic development methodology
-- **[`01-context-rules.md`](01-context-rules.md)**: Context management and preservation systems
-- **[`02-core-rules.md`](02-core-rules.md)**: Comprehensive software engineering best practices
-- **[`03-workspace-rules.md`](03-workspace-rules.md)**: Workspace-specific customization rules
+- **[`00-agent-rules.md`](00-agent-rules.md)**: SPARC agentic development methodology and context management systems
+- **[`01-best-practices.md`](01-best-practices.md)**: Comprehensive software engineering best practices
+- **[`02-workspace-rules.md`](02-workspace-rules.md)**: Workspace-specific customization rules
 
 # Human-AI Collaboration & Software Engineering Framework
 
@@ -200,7 +199,7 @@ This comprehensive software engineering framework evolves through:
 - **Technology Advancement**: Adaptation to new tools, languages, and development practices
 
 ### Customization Guidelines
-- **Workspace-Specific Rules**: Use `03-workspace-rules.md` for customizing framework behavior across the workspace
+- **Workspace-Specific Rules**: Use `02-workspace-rules.md` for customizing framework behavior across the workspace
 - **Domain Adaptations**: Tailor approaches for different technical domains and requirements
 - **Tool Integration**: Adapt installation and usage for various agentic development tools
 - **Quality Standards**: Adjust validation criteria and quality gates for workspace needs
