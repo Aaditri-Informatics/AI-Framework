@@ -80,8 +80,8 @@
 
 ### Code Quality & Style
 
-1. TypeScript Guidelines
-   - Use strict types, and clearly document logic with JSDoc.
+1. Type Safety Guidelines
+   - Use strong typing systems (TypeScript strict mode, Python type hints, Java generics, Rust ownership) and clearly document interfaces, function signatures, and complex logic.
 
 2. Maintainability
    - Write modular, scalable code optimized for clarity and maintenance.
@@ -93,7 +93,7 @@
    - Use symbolic reasoning to systematically identify redundancy.
 
 5. Linting/Formatting
-   - Consistently adhere to ESLint/Prettier configurations.
+   - Consistently adhere to language-appropriate linting and formatting tools (ESLint/Prettier for JS/TS, Black/flake8 for Python, rustfmt for Rust, gofmt for Go).
 
 6. File Naming
    - Use descriptive, permanent, and standardized naming conventions.
