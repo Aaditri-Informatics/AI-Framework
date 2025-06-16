@@ -1,6 +1,6 @@
 # AI (Aaditri Informatics) Framework
 
-There's an Experimental branch if you want to test and give feedback.
+There's a [Software Engineer V1.0 branch](../../tree/SE-v1) for comprehensive software engineering framework with advanced collaboration patterns.
 
 ## Installation
 
