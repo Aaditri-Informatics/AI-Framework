@@ -20,9 +20,8 @@ The framework uses a **prompt injection method** through multiple rule files tha
 ## Framework Architecture
 
 ### Modular Structure
-- **[`00-agent-rules.md`](00-agent-rules.md)**: SPARC agentic development methodology and context management systems
-- **[`01-best-practices.md`](01-best-practices.md)**: Comprehensive software engineering best practices
-- **[`02-workspace-rules.md`](02-workspace-rules.md)**: Workspace-specific customization rules
+- **[`01-agent-rules.md`](01-agent-rules.md)**: SPARC agentic development methodology and context management systems
+- **[`02-workspace-rules.md`](02-workspace-rules.md)**: Workspace-specific software engineering best practices and customization rules
 
 # Human-AI Collaboration & Software Engineering Framework
 
@@ -172,19 +171,23 @@ The framework supports systematic organization of development and collaboration 
 /
 ├── README.md                    # Workspace overview documentation
 ├── context/                     # Collaboration context and artifacts
-│   ├── INDEX.md                # Context management guidelines
+│   ├── INDEX.md                # Context Navigational Hub
 │   ├── docs/                   # Framework documentation
 │   ├── workflows/              # Standard workflow definitions
 │   ├── [PROJECT_NAME]/         # Project-specific collaboration context
 │   │   ├── architecture.md     # Technical architecture decisions
 │   │   ├── prd.md              # Product Requirements Document
 │   │   ├── technical.md        # Technical specifications
-│   │   ├── INDEX.md            # Project collaboration overview
-│   │   ├── tasks.md            # Project task tracking
-│   │   └── journal/            # Session-by-session collaboration log
-│   │       ├── [YYYY-MM-DD]/   # Daily collaboration sessions
-│   │       │   ├── [HHMM]-[TASK_NAME].md  # Individual session records
+│   │   ├── INDEX.md            # Project Context navigational Hub
+│   │   ├── TODO.md             # Project task tracking
+│   │   ├── journal/            # Session-by-session collaboration log
+│   │   │   ├── [YYYY-MM-DD]/   # Daily collaboration sessions
+│   │   │   │   ├── [HHMM]-[TASK_NAME].md  # Individual session records
+│   │   └── tasks/              # Project collaboration tasks details
+│   │       ├── [YYYY-MM-DD]/   # Daily collaboration tasks
+│   │       │   ├── task-[TASK_NAME].md  # Individual task details
 ├── [PROJECT_NAME]/             # Actual project files and deliverables
+│   ├── INDEX.md                # Project Navigational HUB
 │   ├── README.md               # Project-specific documentation
 │   └── (other project folders/files)  # Project-specific implementation files and folders
 ```
