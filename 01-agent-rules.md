@@ -52,10 +52,10 @@
 - Alternative approaches considered
 
 ### Maintain Session Context:
-**Problem:** [brief description]
+**Problem:** [brief description + problem scope]
 **Requirements:** [key requirements]
-**Decisions:** [key decisions with rationale]
-**Status:** [completed/remaining/blockers]
+**Decisions:** [key decisions with rationale and trade-offs]
+**Status:** [progress/blockers/next actions]
 
 ### INDEX Maintenance:
 - Update INDEX.md files when making relevant changes to:
@@ -75,7 +75,7 @@
      - context/[PROJECT_NAME]/prd.md (Product Requirements Documents (PRDs))
      - context/[PROJECT_NAME]/architecture.md
      - context/[PROJECT_NAME]/technical.md
-     - context/[PROJECT_NAME]/tasks.md
+     - context/[PROJECT_NAME]/TODO.md
    - Request clarification immediately if documentation is incomplete or ambiguous.
 
 2. Architecture Adherence
@@ -98,11 +98,15 @@
 │   │   ├── prd.md
 │   │   ├── technical.md
 │   │   ├── INDEX.md
-│   │   ├── tasks.md
+│   │   ├── TODO.md
+│   │   ├── plans/
+│   │   │   ├── [YYYY-MM-DD]/
+│   │   │   │   ├── task-[TASK_NAME].md
 │   │   └── journal/
 │   │       ├── [YYYY-MM-DD]/
 │   │       │   ├── [HHMM]-[TASK_NAME].md
 ├── [PROJECT_NAME]/
 │   ├── README.md
+│   ├── INDEX.md
 │   └── (other project folders/files)
 ```
