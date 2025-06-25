@@ -140,6 +140,11 @@
 3. Research Tools
    - Use advanced agentic tools (Perplexity, AIDER.chat, Firecrawl) to resolve complex issues efficiently.
 
+4. Advanced Debugging Techniques
+   - Apply binary search debugging for efficient issue isolation in large codebases.
+   - Use differential debugging: compare working vs non-working states to identify differences.
+   - Use state snapshot analysis for intermittent issues that are difficult to reproduce.
+
 ### Security
 
 1. Server-Side Authority
@@ -150,6 +155,10 @@
 
 3. Credential Management
    - Securely manage credentials via environment variables; avoid any hardcoding.
+
+4. Threat-Aware Design
+   - Apply least privilege principle: grant minimum permissions necessary for component function.
+   - Implement defense in depth: multiple security layers rather than single controls.
 
 ### Version Control & Environment
 
@@ -173,5 +182,33 @@
 2. Continuous Updates
    - Regularly revisit and refine guidelines to reflect evolving practices and accumulated project knowledge.
 
+### Performance & Reliability
+
+1. Fault Tolerance Design
+   - Implement graceful degradation: provide essential functionality during partial failures.
+   - Apply circuit breaker patterns to prevent cascading failures in distributed systems.
+
+2. Performance Optimization
+   - Design for horizontal scaling through stateless architecture.
+   - Apply caching strategies with consideration for cache invalidation and consistency.
+
+### Technical Decision Documentation
+
+1. Architecture Decision Records (ADRs)
+   - Document significant technical decisions with context, options considered, and rationale.
+   - Track architectural evolution and decision impact over time.
+
+2. Trade-off Analysis
+   - Explicitly evaluate and document technical trade-offs in autonomous decision-making.
+   - Consider reversibility: prefer decisions that maintain future options when facing uncertainty.
+
+### Legacy System Integration
+
+1. Incremental Modernization
+   - Apply strangler fig pattern: gradually replace legacy components by intercepting calls.
+   - Implement anti-corruption layers between new and legacy systems for clean boundaries.
+
 ## Project-specific rules
 
+### General Project Management
+- Each [PROJECT_NAME] maintains its own separate git repository
